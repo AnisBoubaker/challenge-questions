@@ -1,0 +1,116 @@
+Processing project: ../data_clean/inf155-202403-tp1/Gr02/TP1-Gr02-EquipeA_219664_assignsubmission_file
+Preprocessing complete. Output saved to '../data_ast/TP1-Gr02-EquipeA_219664_assignsubmission_file_preprocessed.c'.
+Function definitions and ASTs saved to '../data_ast/TP1-Gr02-EquipeA_219664_assignsubmission_file.json'.
+Temporary files deleted for project 'TP1-Gr02-EquipeA_219664_assignsubmission_file'.
+Processing project: ../data_clean/inf155-202403-tp1/Gr02/TP1-Gr02-EquipeH_219671_assignsubmission_file
+Preprocessing complete. Output saved to '../data_ast/TP1-Gr02-EquipeH_219671_assignsubmission_file_preprocessed.c'.
+Function definitions and ASTs saved to '../data_ast/TP1-Gr02-EquipeH_219671_assignsubmission_file.json'.
+Temporary files deleted for project 'TP1-Gr02-EquipeH_219671_assignsubmission_file'.
+Processing project: ../data_clean/inf155-202403-tp1/Gr02/TP1-Gr02-EquipeG_219670_assignsubmission_file
+Preprocessing complete. Output saved to '../data_ast/TP1-Gr02-EquipeG_219670_assignsubmission_file_preprocessed.c'.
+Function definitions and ASTs saved to '../data_ast/TP1-Gr02-EquipeG_219670_assignsubmission_file.json'.
+Temporary files deleted for project 'TP1-Gr02-EquipeG_219670_assignsubmission_file'.
+Processing project: ../data_clean/inf155-202403-tp1/Gr02/TP1-Gr02-EquipeF_219669_assignsubmission_file
+Preprocessing complete. Output saved to '../data_ast/TP1-Gr02-EquipeF_219669_assignsubmission_file_preprocessed.c'.
+Function definitions and ASTs saved to '../data_ast/TP1-Gr02-EquipeF_219669_assignsubmission_file.json'.
+Temporary files deleted for project 'TP1-Gr02-EquipeF_219669_assignsubmission_file'.
+Processing project: ../data_clean/inf155-202403-tp1/Gr02/TP1-Gr02-EquipeI_219672_assignsubmission_file
+An error occurred while running cpp: Command 'cpp -I/Users/anis/Sync/01_ETS/Dev/challenge-questions/lib/python3.12/site-packages/pycparser/utils/fake_libc_include -I../data_clean/inf155-202403-tp1/Gr02/TP1-Gr02-EquipeI_219672_assignsubmission_file ../data_ast/TP1-Gr02-EquipeI_219672_assignsubmission_file_concatenated.c > ../data_ast/TP1-Gr02-EquipeI_219672_assignsubmission_file_preprocessed.c' returned non-zero exit status 1.
+Function definitions and ASTs saved to '../data_ast/TP1-Gr02-EquipeI_219672_assignsubmission_file.json'.
+Temporary files deleted for project 'TP1-Gr02-EquipeI_219672_assignsubmission_file'.
+Processing project: ../data_clean/inf155-202403-tp1/Gr02/TP1-Gr02-EquipeB_219665_assignsubmission_file
+Preprocessing complete. Output saved to '../data_ast/TP1-Gr02-EquipeB_219665_assignsubmission_file_preprocessed.c'.
+Function definitions and ASTs saved to '../data_ast/TP1-Gr02-EquipeB_219665_assignsubmission_file.json'.
+Temporary files deleted for project 'TP1-Gr02-EquipeB_219665_assignsubmission_file'.
+Processing project: ../data_clean/inf155-202403-tp1/Gr02/TP1-Gr02-EquipeJ_219673_assignsubmission_file
+Preprocessing complete. Output saved to '../data_ast/TP1-Gr02-EquipeJ_219673_assignsubmission_file_preprocessed.c'.
+Function definitions and ASTs saved to '../data_ast/TP1-Gr02-EquipeJ_219673_assignsubmission_file.json'.
+Temporary files deleted for project 'TP1-Gr02-EquipeJ_219673_assignsubmission_file'.
+Processing project: ../data_clean/inf155-202403-tp1/Gr02/TP1-Gr02-EquipeD_219667_assignsubmission_file
+Preprocessing complete. Output saved to '../data_ast/TP1-Gr02-EquipeD_219667_assignsubmission_file_preprocessed.c'.
+Function definitions and ASTs saved to '../data_ast/TP1-Gr02-EquipeD_219667_assignsubmission_file.json'.
+Temporary files deleted for project 'TP1-Gr02-EquipeD_219667_assignsubmission_file'.
+Processing project: ../data_clean/inf155-202403-tp1/Gr02/TP1-Gr02-EquipeE_219668_assignsubmission_file
+An error occurred while running cpp: Command 'cpp -I/Users/anis/Sync/01_ETS/Dev/challenge-questions/lib/python3.12/site-packages/pycparser/utils/fake_libc_include -I../data_clean/inf155-202403-tp1/Gr02/TP1-Gr02-EquipeE_219668_assignsubmission_file ../data_ast/TP1-Gr02-EquipeE_219668_assignsubmission_file_concatenated.c > ../data_ast/TP1-Gr02-EquipeE_219668_assignsubmission_file_preprocessed.c' returned non-zero exit status 1.
+Function definitions and ASTs saved to '../data_ast/TP1-Gr02-EquipeE_219668_assignsubmission_file.json'.
+Temporary files deleted for project 'TP1-Gr02-EquipeE_219668_assignsubmission_file'.
+Processing project: ../data_clean/inf155-202403-tp1/Gr02/TP1-Gr02-EquipeC_219666_assignsubmission_file
+Preprocessing complete. Output saved to '../data_ast/TP1-Gr02-EquipeC_219666_assignsubmission_file_preprocessed.c'.
+Function definitions and ASTs saved to '../data_ast/TP1-Gr02-EquipeC_219666_assignsubmission_file.json'.
+Temporary files deleted for project 'TP1-Gr02-EquipeC_219666_assignsubmission_file'.
+Processing project: ../data_clean/inf155-202403-tp1/Gr05/TP1-Gr05-EquipeB_219698_assignsubmission_file
+Preprocessing complete. Output saved to '../data_ast/TP1-Gr05-EquipeB_219698_assignsubmission_file_preprocessed.c'.
+Function definitions and ASTs saved to '../data_ast/TP1-Gr05-EquipeB_219698_assignsubmission_file.json'.
+Temporary files deleted for project 'TP1-Gr05-EquipeB_219698_assignsubmission_file'.
+Processing project: ../data_clean/inf155-202403-tp1/Gr05/TP1-Gr05-EquipeI_219705_assignsubmission_file
+Preprocessing complete. Output saved to '../data_ast/TP1-Gr05-EquipeI_219705_assignsubmission_file_preprocessed.c'.
+Function definitions and ASTs saved to '../data_ast/TP1-Gr05-EquipeI_219705_assignsubmission_file.json'.
+Temporary files deleted for project 'TP1-Gr05-EquipeI_219705_assignsubmission_file'.
+Processing project: ../data_clean/inf155-202403-tp1/Gr05/TP1-Gr05-EquipeG_219703_assignsubmission_file
+Preprocessing complete. Output saved to '../data_ast/TP1-Gr05-EquipeG_219703_assignsubmission_file_preprocessed.c'.
+Function definitions and ASTs saved to '../data_ast/TP1-Gr05-EquipeG_219703_assignsubmission_file.json'.
+Temporary files deleted for project 'TP1-Gr05-EquipeG_219703_assignsubmission_file'.
+Processing project: ../data_clean/inf155-202403-tp1/Gr05/TP1-Gr05-EquipeH_219704_assignsubmission_file
+Preprocessing complete. Output saved to '../data_ast/TP1-Gr05-EquipeH_219704_assignsubmission_file_preprocessed.c'.
+Function definitions and ASTs saved to '../data_ast/TP1-Gr05-EquipeH_219704_assignsubmission_file.json'.
+Temporary files deleted for project 'TP1-Gr05-EquipeH_219704_assignsubmission_file'.
+Processing project: ../data_clean/inf155-202403-tp1/Gr05/TP1-Gr05-EquipeJ_219706_assignsubmission_file
+Preprocessing complete. Output saved to '../data_ast/TP1-Gr05-EquipeJ_219706_assignsubmission_file_preprocessed.c'.
+Function definitions and ASTs saved to '../data_ast/TP1-Gr05-EquipeJ_219706_assignsubmission_file.json'.
+Temporary files deleted for project 'TP1-Gr05-EquipeJ_219706_assignsubmission_file'.
+Processing project: ../data_clean/inf155-202403-tp1/Gr05/TP1-Gr05-EquipeE_219701_assignsubmission_file
+An error occurred while running cpp: Command 'cpp -I/Users/anis/Sync/01_ETS/Dev/challenge-questions/lib/python3.12/site-packages/pycparser/utils/fake_libc_include -I../data_clean/inf155-202403-tp1/Gr05/TP1-Gr05-EquipeE_219701_assignsubmission_file ../data_ast/TP1-Gr05-EquipeE_219701_assignsubmission_file_concatenated.c > ../data_ast/TP1-Gr05-EquipeE_219701_assignsubmission_file_preprocessed.c' returned non-zero exit status 1.
+Function definitions and ASTs saved to '../data_ast/TP1-Gr05-EquipeE_219701_assignsubmission_file.json'.
+Temporary files deleted for project 'TP1-Gr05-EquipeE_219701_assignsubmission_file'.
+Processing project: ../data_clean/inf155-202403-tp1/Gr05/TP1-Gr05-EquipeD_219700_assignsubmission_file
+Preprocessing complete. Output saved to '../data_ast/TP1-Gr05-EquipeD_219700_assignsubmission_file_preprocessed.c'.
+Function definitions and ASTs saved to '../data_ast/TP1-Gr05-EquipeD_219700_assignsubmission_file.json'.
+Temporary files deleted for project 'TP1-Gr05-EquipeD_219700_assignsubmission_file'.
+Processing project: ../data_clean/inf155-202403-tp1/Gr05/TP1-Gr05-EquipeA_219697_assignsubmission_file
+Preprocessing complete. Output saved to '../data_ast/TP1-Gr05-EquipeA_219697_assignsubmission_file_preprocessed.c'.
+Function definitions and ASTs saved to '../data_ast/TP1-Gr05-EquipeA_219697_assignsubmission_file.json'.
+Temporary files deleted for project 'TP1-Gr05-EquipeA_219697_assignsubmission_file'.
+Processing project: ../data_clean/inf155-202403-tp1/Gr04/TP1-Gr04-EquipeH_219693_assignsubmission_file
+Preprocessing complete. Output saved to '../data_ast/TP1-Gr04-EquipeH_219693_assignsubmission_file_preprocessed.c'.
+Function definitions and ASTs saved to '../data_ast/TP1-Gr04-EquipeH_219693_assignsubmission_file.json'.
+Temporary files deleted for project 'TP1-Gr04-EquipeH_219693_assignsubmission_file'.
+Processing project: ../data_clean/inf155-202403-tp1/Gr04/TP1-Gr04-EquipeI_219694_assignsubmission_file
+Preprocessing complete. Output saved to '../data_ast/TP1-Gr04-EquipeI_219694_assignsubmission_file_preprocessed.c'.
+Function definitions and ASTs saved to '../data_ast/TP1-Gr04-EquipeI_219694_assignsubmission_file.json'.
+Temporary files deleted for project 'TP1-Gr04-EquipeI_219694_assignsubmission_file'.
+Processing project: ../data_clean/inf155-202403-tp1/Gr04/TP1-Gr04-EquipeA_219686_assignsubmission_file
+Preprocessing complete. Output saved to '../data_ast/TP1-Gr04-EquipeA_219686_assignsubmission_file_preprocessed.c'.
+Function definitions and ASTs saved to '../data_ast/TP1-Gr04-EquipeA_219686_assignsubmission_file.json'.
+Temporary files deleted for project 'TP1-Gr04-EquipeA_219686_assignsubmission_file'.
+Processing project: ../data_clean/inf155-202403-tp1/Gr04/TP1-Gr04-EquipeB_219687_assignsubmission_file
+Preprocessing complete. Output saved to '../data_ast/TP1-Gr04-EquipeB_219687_assignsubmission_file_preprocessed.c'.
+Function definitions and ASTs saved to '../data_ast/TP1-Gr04-EquipeB_219687_assignsubmission_file.json'.
+Temporary files deleted for project 'TP1-Gr04-EquipeB_219687_assignsubmission_file'.
+Processing project: ../data_clean/inf155-202403-tp1/Gr04/TP1-Gr04-EquipeD_219689_assignsubmission_file
+Preprocessing complete. Output saved to '../data_ast/TP1-Gr04-EquipeD_219689_assignsubmission_file_preprocessed.c'.
+Skipping project 'TP1-Gr04-EquipeD_219689_assignsubmission_file' due to error: :845:21: before: int
+Temporary files deleted for project 'TP1-Gr04-EquipeD_219689_assignsubmission_file'.
+Processing project: ../data_clean/inf155-202403-tp1/Gr04/TP1-Gr04-EquipeC_219688_assignsubmission_file
+Preprocessing complete. Output saved to '../data_ast/TP1-Gr04-EquipeC_219688_assignsubmission_file_preprocessed.c'.
+Function definitions and ASTs saved to '../data_ast/TP1-Gr04-EquipeC_219688_assignsubmission_file.json'.
+Temporary files deleted for project 'TP1-Gr04-EquipeC_219688_assignsubmission_file'.
+Processing project: ../data_clean/inf155-202403-tp1/Gr04/TP1-Gr04-EquipeE_219690_assignsubmission_file
+Preprocessing complete. Output saved to '../data_ast/TP1-Gr04-EquipeE_219690_assignsubmission_file_preprocessed.c'.
+Function definitions and ASTs saved to '../data_ast/TP1-Gr04-EquipeE_219690_assignsubmission_file.json'.
+Temporary files deleted for project 'TP1-Gr04-EquipeE_219690_assignsubmission_file'.
+Processing project: ../data_clean/inf155-202403-tp1/Gr04/TP1-Gr04-EquipeJ_219695_assignsubmission_file
+Preprocessing complete. Output saved to '../data_ast/TP1-Gr04-EquipeJ_219695_assignsubmission_file_preprocessed.c'.
+Function definitions and ASTs saved to '../data_ast/TP1-Gr04-EquipeJ_219695_assignsubmission_file.json'.
+Temporary files deleted for project 'TP1-Gr04-EquipeJ_219695_assignsubmission_file'.
+Processing project: ../data_clean/inf155-202403-tp1/Gr04/TP1-Gr04-EquipeK_219696_assignsubmission_file
+Preprocessing complete. Output saved to '../data_ast/TP1-Gr04-EquipeK_219696_assignsubmission_file_preprocessed.c'.
+Function definitions and ASTs saved to '../data_ast/TP1-Gr04-EquipeK_219696_assignsubmission_file.json'.
+Temporary files deleted for project 'TP1-Gr04-EquipeK_219696_assignsubmission_file'.
+Processing project: ../data_clean/inf155-202403-tp1/Gr02/TP1-Gr02-EquipeI_219672_assignsubmission_file/INF155-TP1_EquipeI
+Preprocessing complete. Output saved to '../data_ast/INF155-TP1_EquipeI_preprocessed.c'.
+Function definitions and ASTs saved to '../data_ast/INF155-TP1_EquipeI.json'.
+Temporary files deleted for project 'INF155-TP1_EquipeI'.
+Processing project: ../data_clean/inf155-202403-tp1/Gr02/TP1-Gr02-EquipeE_219668_assignsubmission_file/tp1
+Preprocessing complete. Output saved to '../data_ast/tp1_preprocessed.c'.
+Function definitions and ASTs saved to '../data_ast/tp1.json'.
+Temporary files deleted for project 'tp1'.

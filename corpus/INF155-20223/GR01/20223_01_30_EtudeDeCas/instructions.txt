@@ -1,0 +1,13 @@
+******* ÉTUDE DE CAS **********
+
+1. Créer la fonction constructeur pour un compte qui alloue dynamiquement un compte bancaire et retourne l'adresse du compte nouvellement alloué. 
+
+2. Modifier le constructeur de t_client de sorte que le nom et le prénom soient reçus en paramètre et que l'espace mémoire pour stocker le nom et le prénom soient alloués dynamiquement. Modifier l'enregistrement client en conséquence. 
+
+3. Modifier le main du programme pour qu'il contienne un tableau de clients alloués dynamiquement. On supposera qu'on n'aura jamais plus de 1000 clients. 
+
+4. Modifier l'enregistrement d'un client pour que le tableau de comptes soit un tableau de références vers des comptes et non un tableau de comptes. Modifier le programme en conséquence.
+
+5. Modifier l'enregistrement d'un client pour que le tableau de comptes devienne maintenant un tableau dynamique de comptes bancaires. Ajouter la fonction ajouter compte et supprimer compte. 
+
+6. Créer le type de données "relevé de compte". Un relevé de compte a une date d'émission et concerne un mois donné (une date dont le jour est à 0). Le relevé est également associé à un compte bancaire. Dans un relevé nous devons disposer des montants de toutes les opérations effectuées, et ce pour chacun des jours du mois. La banque empêche ses clients d'effectuer plus de 50 opérations par jour. 

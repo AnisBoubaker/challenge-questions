@@ -1,0 +1,8 @@
+cmake_minimum_required(VERSION 3.26)
+project(Tri_Tab1D C)
+
+set(CMAKE_C_STANDARD 11)
+
+add_executable(Tri_Tab1D main.c
+        tri_tab1d.c
+        tri_tab1d.h)

@@ -1,0 +1,233 @@
+{
+    "project_name": "TP1-Gr05-EquipeG_219703_assignsubmission_file",
+    "functions": [
+        {
+            "function_name": "swap",
+            "function_code": "void swap(void *a, void *b, size_t size)\n{\n    void *temp = malloc(size);\n    if (temp != 0)\n    {\n        memcpy(temp, a, size);\n        memcpy(a, b, size);\n        memcpy(b, temp, size);\n        free(temp);\n    }",
+            "function_ast": "FuncDef(\n  decl=\n    Decl(\n      name='swap',\n      quals=[],\n      align=[],\n      storage=[],\n      funcspec=[],\n      type=\n        FuncDecl(\n          args=\n            ParamList(\n              params[0]=\n                Decl(\n                  name='a',\n                  quals=[],\n                  align=[],\n                  storage=[],\n                  funcspec=[],\n                  type=\n                    PtrDecl(\n                      quals=[],\n                      type=\n                        TypeDecl(\n                          declname='a',\n                          quals=[],\n                          align=None,\n                          type=\n                            IdentifierType(\n                              names=['void'],\n                            )\n                        )\n                    )\n                )\n              params[1]=\n                Decl(\n                  name='b',\n                  quals=[],\n                  align=[],\n                  storage=[],\n                  funcspec=[],\n                  type=\n                    PtrDecl(\n                      quals=[],\n                      type=\n                        TypeDecl(\n                          declname='b',\n                          quals=[],\n                          align=None,\n                          type=\n                            IdentifierType(\n                              names=['void'],\n                            )\n                        )\n                    )\n                )\n              params[2]=\n                Decl(\n                  name='size',\n                  quals=[],\n                  align=[],\n                  storage=[],\n                  funcspec=[],\n                  type=\n                    TypeDecl(\n                      declname='size',\n                      quals=[],\n                      align=None,\n                      type=\n                        IdentifierType(\n                          names=['size_t'],\n                        )\n                    )\n                )\n            )\n          type=\n            TypeDecl(\n              declname='swap',\n              quals=[],\n              align=None,\n              type=\n                IdentifierType(\n                  names=['void'],\n                )\n            )\n        )\n    )\n  body=\n    Compound(\n      block_items[0]=\n        Decl(\n          name='temp',\n          quals=[],\n          align=[],\n          storage=[],\n          funcspec=[],\n          type=\n            PtrDecl(\n              quals=[],\n              type=\n                TypeDecl(\n                  declname='temp',\n                  quals=[],\n                  align=None,\n                  type=\n                    IdentifierType(\n                      names=['void'],\n                    )\n                )\n            )\n          init=\n            FuncCall(\n              name=\n                ID(\n                  name='malloc',\n                )\n              args=\n                ExprList(\n                  exprs[0]=\n                    ID(\n                      name='size',\n                    )\n                )\n            )\n        )\n      block_items[1]=\n        If(\n          cond=\n            BinaryOp(\n              op='!=',\n              left=\n                ID(\n                  name='temp',\n                )\n              right=\n                Constant(\n                  type='int',\n                  value='0',\n                )\n            )\n          iftrue=\n            Compound(\n              block_items[0]=\n                FuncCall(\n                  name=\n                    ID(\n                      name='memcpy',\n                    )\n                  args=\n                    ExprList(\n                      exprs[0]=\n                        ID(\n                          name='temp',\n                        )\n                      exprs[1]=\n                        ID(\n                          name='a',\n                        )\n                      exprs[2]=\n                        ID(\n                          name='size',\n                        )\n                    )\n                )\n              block_items[1]=\n                FuncCall(\n                  name=\n                    ID(\n                      name='memcpy',\n                    )\n                  args=\n                    ExprList(\n                      exprs[0]=\n                        ID(\n                          name='a',\n                        )\n                      exprs[1]=\n                        ID(\n                          name='b',\n                        )\n                      exprs[2]=\n                        ID(\n                          name='size',\n                        )\n                    )\n                )\n              block_items[2]=\n                FuncCall(\n                  name=\n                    ID(\n                      name='memcpy',\n                    )\n                  args=\n                    ExprList(\n                      exprs[0]=\n                        ID(\n                          name='b',\n                        )\n                      exprs[1]=\n                        ID(\n                          name='temp',\n                        )\n                      exprs[2]=\n                        ID(\n                          name='size',\n                        )\n                    )\n                )\n              block_items[3]=\n                FuncCall(\n                  name=\n                    ID(\n                      name='free',\n                    )\n                  args=\n                    ExprList(\n                      exprs[0]=\n                        ID(\n                          name='temp',\n                        )\n                    )\n                )\n            )\n        )\n    )\n)",
+            "similar_code": [
+                {
+                    "distance": 0.37450408935546875,
+                    "project_name": "20223_01_20_Tri",
+                    "function_name": "main",
+                    "function_code": "int main(void)\n{\n\tint mon_tableau[] = { 44, 10, 20, 55, 10, 24, 35 };\n\n\tprintf(\"Avant le tri: \\n\");\n\tafficher_tab(mon_tableau, 7);\n\n\ttri_insertion(mon_tableau, 7);\n\n\tprintf(\"Apres le tri: \\n\");\n\tafficher_tab(mon_tableau, 7);\n\n\tsystem(\"pause\");\n\treturn 0;\n}"
+                },
+                {
+                    "distance": 0.3932408392429352,
+                    "project_name": "20233_02_29_NomPrenom_Dynamique",
+                    "function_name": "main",
+                    "function_code": "int main() {\n    int a;\n    char* personne;\n\n\n    personne = saisie_nom_prenom();\n     \n    if(personne!=0) {\n        printf(\"%s\\n\", personne);\n    }"
+                },
+                {
+                    "distance": 0.40239641070365906,
+                    "project_name": "20233_02_15_Exercice_Minimum",
+                    "function_name": "main",
+                    "function_code": "int main(void) {\n\n    printf(\"%lf\\n\", min_de_3(32, 2, 18) );\n    printf(\"%lf\\n\", min_de_3(30, -40, 50) );\n\n    return 0;\n}"
+                },
+                {
+                    "distance": 0.40891252901144315,
+                    "project_name": "20223_01_16_Tab_PTR",
+                    "function_name": "main",
+                    "function_code": "int main(void)\n{\n\tint mon_tableau[100];\n\n\tmon_tableau[0] = 10; \n\tmon_tableau[1] = 20;\n\tmon_tableau[2] = 30;\n\tmon_tableau[3] = 40;\n\n\tprintf(\"%d\\n\", *mon_tableau);\n\n\tprintf(\"%d\\n\", *(mon_tableau+1));\n\n\tsystem(\"pause\");\n\treturn 0;\n}"
+                },
+                {
+                    "distance": 0.4098815619945526,
+                    "project_name": "20223_01_18_ExerciceTableaux",
+                    "function_name": "main",
+                    "function_code": "int main(void)\n{\n\t \n\tint tab[100] = {12, 15, 17, 22, 15, 11};\n\t \n\tint tab2[50] = { 0 };\n\t \n\tint tab3[] = { 10, 20 , 30 , 40, 50, 60, 70, 80 };\n\n\tint la_position; \n\n\tif ( trouver_val(tab, 6, 15, &la_position) )\n\t{\n\t\tprintf(\"La valeur a ete trouvee a la position %d\\n\", la_position);\n\t}"
+                }
+            ],
+            "question": "Pouvez-vous expliquer comment la fonction de copie m\u00e9moire \"memcpy\" est utilis\u00e9e pour \u00e9changer les valeurs de 'a' et 'b' dans votre fonction 'swap' ?"
+        },
+        {
+            "function_name": "dplc_bas",
+            "function_code": "void dplc_bas(int coordo[], int pos_lig, int pos_col)\n{\n    coordo[0]=pos_col;\n    coordo[1]=pos_lig+1;\n}",
+            "function_ast": "FuncDef(\n  decl=\n    Decl(\n      name='dplc_bas',\n      quals=[],\n      align=[],\n      storage=[],\n      funcspec=[],\n      type=\n        FuncDecl(\n          args=\n            ParamList(\n              params[0]=\n                Decl(\n                  name='coordo',\n                  quals=[],\n                  align=[],\n                  storage=[],\n                  funcspec=[],\n                  type=\n                    ArrayDecl(\n                      dim_quals=[],\n                      type=\n                        TypeDecl(\n                          declname='coordo',\n                          quals=[],\n                          align=None,\n                          type=\n                            IdentifierType(\n                              names=['int'],\n                            )\n                        )\n                    )\n                )\n              params[1]=\n                Decl(\n                  name='pos_lig',\n                  quals=[],\n                  align=[],\n                  storage=[],\n                  funcspec=[],\n                  type=\n                    TypeDecl(\n                      declname='pos_lig',\n                      quals=[],\n                      align=None,\n                      type=\n                        IdentifierType(\n                          names=['int'],\n                        )\n                    )\n                )\n              params[2]=\n                Decl(\n                  name='pos_col',\n                  quals=[],\n                  align=[],\n                  storage=[],\n                  funcspec=[],\n                  type=\n                    TypeDecl(\n                      declname='pos_col',\n                      quals=[],\n                      align=None,\n                      type=\n                        IdentifierType(\n                          names=['int'],\n                        )\n                    )\n                )\n            )\n          type=\n            TypeDecl(\n              declname='dplc_bas',\n              quals=[],\n              align=None,\n              type=\n                IdentifierType(\n                  names=['void'],\n                )\n            )\n        )\n    )\n  body=\n    Compound(\n      block_items[0]=\n        Assignment(\n          op='=',\n          lvalue=\n            ArrayRef(\n              name=\n                ID(\n                  name='coordo',\n                )\n              subscript=\n                Constant(\n                  type='int',\n                  value='0',\n                )\n            )\n          rvalue=\n            ID(\n              name='pos_col',\n            )\n        )\n      block_items[1]=\n        Assignment(\n          op='=',\n          lvalue=\n            ArrayRef(\n              name=\n                ID(\n                  name='coordo',\n                )\n              subscript=\n                Constant(\n                  type='int',\n                  value='1',\n                )\n            )\n          rvalue=\n            BinaryOp(\n              op='+',\n              left=\n                ID(\n                  name='pos_lig',\n                )\n              right=\n                Constant(\n                  type='int',\n                  value='1',\n                )\n            )\n        )\n    )\n)",
+            "similar_code": [
+                {
+                    "distance": 0.31693947315216064,
+                    "project_name": "20233_02_17_PassageParReference",
+                    "function_name": "min_max_de_3",
+                    "function_code": "void min_max_de_3(int val1, int val2, int val3, int* adr_pour_min, int* adr_pour_max)\n{\n    int min = val1;\n    int max = val1;\n\n    if(val2 < min){\n        min = val2;\n    }"
+                },
+                {
+                    "distance": 0.3174123466014862,
+                    "project_name": "20223_01_18_ExerciceTableaux",
+                    "function_name": "main",
+                    "function_code": "int main(void)\n{\n\t \n\tint tab[100] = {12, 15, 17, 22, 15, 11};\n\t \n\tint tab2[50] = { 0 };\n\t \n\tint tab3[] = { 10, 20 , 30 , 40, 50, 60, 70, 80 };\n\n\tint la_position; \n\n\tif ( trouver_val(tab, 6, 15, &la_position) )\n\t{\n\t\tprintf(\"La valeur a ete trouvee a la position %d\\n\", la_position);\n\t}"
+                },
+                {
+                    "distance": 0.3199988901615143,
+                    "project_name": "20233_02_28_Exercice_NomPrenom",
+                    "function_name": "main",
+                    "function_code": "int main() {\n    int a;\n    char personne[250];\n\n    saisie_nom_prenom(personne, 250);\n    printf(\"%s\\n\", personne);\n\n    return 0;\n}"
+                },
+                {
+                    "distance": 0.32077330350875854,
+                    "project_name": "20233_02_29_NomPrenom_Dynamique",
+                    "function_name": "main",
+                    "function_code": "int main() {\n    int a;\n    char* personne;\n\n\n    personne = saisie_nom_prenom();\n     \n    if(personne!=0) {\n        printf(\"%s\\n\", personne);\n    }"
+                },
+                {
+                    "distance": 0.3252876268042676,
+                    "project_name": "20233_02_20_TableauxFonctions",
+                    "function_name": "afficher_tableau",
+                    "function_code": "void afficher_tableau(int tableau[], int taille)\n{\n    for(int i=0; i< taille; i++)\n    {\n        printf(\"La case #%i contient: %i\\n\", i, tableau[i]);\n    }"
+                }
+            ],
+            "question": "Pouvez-vous expliquer comment la fonction dplc_bas utilise les entr\u00e9es pour mettre \u00e0 jour les valeurs au sein du tableau coordo[] ?"
+        },
+        {
+            "function_name": "dplc_haut",
+            "function_code": "void dplc_haut(int coordo[], int pos_lig, int pos_col)\n{\n    coordo[0]=pos_col;\n    coordo[1]=pos_lig-1;\n}",
+            "function_ast": "FuncDef(\n  decl=\n    Decl(\n      name='dplc_haut',\n      quals=[],\n      align=[],\n      storage=[],\n      funcspec=[],\n      type=\n        FuncDecl(\n          args=\n            ParamList(\n              params[0]=\n                Decl(\n                  name='coordo',\n                  quals=[],\n                  align=[],\n                  storage=[],\n                  funcspec=[],\n                  type=\n                    ArrayDecl(\n                      dim_quals=[],\n                      type=\n                        TypeDecl(\n                          declname='coordo',\n                          quals=[],\n                          align=None,\n                          type=\n                            IdentifierType(\n                              names=['int'],\n                            )\n                        )\n                    )\n                )\n              params[1]=\n                Decl(\n                  name='pos_lig',\n                  quals=[],\n                  align=[],\n                  storage=[],\n                  funcspec=[],\n                  type=\n                    TypeDecl(\n                      declname='pos_lig',\n                      quals=[],\n                      align=None,\n                      type=\n                        IdentifierType(\n                          names=['int'],\n                        )\n                    )\n                )\n              params[2]=\n                Decl(\n                  name='pos_col',\n                  quals=[],\n                  align=[],\n                  storage=[],\n                  funcspec=[],\n                  type=\n                    TypeDecl(\n                      declname='pos_col',\n                      quals=[],\n                      align=None,\n                      type=\n                        IdentifierType(\n                          names=['int'],\n                        )\n                    )\n                )\n            )\n          type=\n            TypeDecl(\n              declname='dplc_haut',\n              quals=[],\n              align=None,\n              type=\n                IdentifierType(\n                  names=['void'],\n                )\n            )\n        )\n    )\n  body=\n    Compound(\n      block_items[0]=\n        Assignment(\n          op='=',\n          lvalue=\n            ArrayRef(\n              name=\n                ID(\n                  name='coordo',\n                )\n              subscript=\n                Constant(\n                  type='int',\n                  value='0',\n                )\n            )\n          rvalue=\n            ID(\n              name='pos_col',\n            )\n        )\n      block_items[1]=\n        Assignment(\n          op='=',\n          lvalue=\n            ArrayRef(\n              name=\n                ID(\n                  name='coordo',\n                )\n              subscript=\n                Constant(\n                  type='int',\n                  value='1',\n                )\n            )\n          rvalue=\n            BinaryOp(\n              op='-',\n              left=\n                ID(\n                  name='pos_lig',\n                )\n              right=\n                Constant(\n                  type='int',\n                  value='1',\n                )\n            )\n        )\n    )\n)",
+            "similar_code": [
+                {
+                    "distance": 0.3079245089165689,
+                    "project_name": "20233_02_20_TableauxFonctions",
+                    "function_name": "afficher_tableau",
+                    "function_code": "void afficher_tableau(int tableau[], int taille)\n{\n    for(int i=0; i< taille; i++)\n    {\n        printf(\"La case #%i contient: %i\\n\", i, tableau[i]);\n    }"
+                },
+                {
+                    "distance": 0.30840447545051575,
+                    "project_name": "20233_02_29_NomPrenom_Dynamique",
+                    "function_name": "main",
+                    "function_code": "int main() {\n    int a;\n    char* personne;\n\n\n    personne = saisie_nom_prenom();\n     \n    if(personne!=0) {\n        printf(\"%s\\n\", personne);\n    }"
+                },
+                {
+                    "distance": 0.3091932535171509,
+                    "project_name": "20233_02_28_Exercice_NomPrenom",
+                    "function_name": "main",
+                    "function_code": "int main() {\n    int a;\n    char personne[250];\n\n    saisie_nom_prenom(personne, 250);\n    printf(\"%s\\n\", personne);\n\n    return 0;\n}"
+                },
+                {
+                    "distance": 0.310007244348526,
+                    "project_name": "20233_02_17_PassageParReference",
+                    "function_name": "min_max_de_3",
+                    "function_code": "void min_max_de_3(int val1, int val2, int val3, int* adr_pour_min, int* adr_pour_max)\n{\n    int min = val1;\n    int max = val1;\n\n    if(val2 < min){\n        min = val2;\n    }"
+                },
+                {
+                    "distance": 0.3192096260933629,
+                    "project_name": "20233_02_20_TableauxFonctions",
+                    "function_name": "moyenne_tableau_entier",
+                    "function_code": "double moyenne_tableau_entier(int tableau[], int taille)\n{\n    double moyenne = 0;\n    for(int i=0; i<taille; i++)\n    {\n        moyenne += tableau[i];\n    }"
+                }
+            ],
+            "question": "Pourriez-vous expliquer pourquoi vous avez choisi de donner \u00e0 \"coordo[0]\" la valeur de \"pos_col\" et \u00e0 \"coordo[1]\" la valeur de \"pos_lig-1\" ?"
+        },
+        {
+            "function_name": "dplc_gauche",
+            "function_code": "void dplc_gauche(int coordo[], int pos_lig, int pos_col)\n{\n    coordo[0]=pos_col-1;\n    coordo[1]=pos_lig;\n}",
+            "function_ast": "FuncDef(\n  decl=\n    Decl(\n      name='dplc_gauche',\n      quals=[],\n      align=[],\n      storage=[],\n      funcspec=[],\n      type=\n        FuncDecl(\n          args=\n            ParamList(\n              params[0]=\n                Decl(\n                  name='coordo',\n                  quals=[],\n                  align=[],\n                  storage=[],\n                  funcspec=[],\n                  type=\n                    ArrayDecl(\n                      dim_quals=[],\n                      type=\n                        TypeDecl(\n                          declname='coordo',\n                          quals=[],\n                          align=None,\n                          type=\n                            IdentifierType(\n                              names=['int'],\n                            )\n                        )\n                    )\n                )\n              params[1]=\n                Decl(\n                  name='pos_lig',\n                  quals=[],\n                  align=[],\n                  storage=[],\n                  funcspec=[],\n                  type=\n                    TypeDecl(\n                      declname='pos_lig',\n                      quals=[],\n                      align=None,\n                      type=\n                        IdentifierType(\n                          names=['int'],\n                        )\n                    )\n                )\n              params[2]=\n                Decl(\n                  name='pos_col',\n                  quals=[],\n                  align=[],\n                  storage=[],\n                  funcspec=[],\n                  type=\n                    TypeDecl(\n                      declname='pos_col',\n                      quals=[],\n                      align=None,\n                      type=\n                        IdentifierType(\n                          names=['int'],\n                        )\n                    )\n                )\n            )\n          type=\n            TypeDecl(\n              declname='dplc_gauche',\n              quals=[],\n              align=None,\n              type=\n                IdentifierType(\n                  names=['void'],\n                )\n            )\n        )\n    )\n  body=\n    Compound(\n      block_items[0]=\n        Assignment(\n          op='=',\n          lvalue=\n            ArrayRef(\n              name=\n                ID(\n                  name='coordo',\n                )\n              subscript=\n                Constant(\n                  type='int',\n                  value='0',\n                )\n            )\n          rvalue=\n            BinaryOp(\n              op='-',\n              left=\n                ID(\n                  name='pos_col',\n                )\n              right=\n                Constant(\n                  type='int',\n                  value='1',\n                )\n            )\n        )\n      block_items[1]=\n        Assignment(\n          op='=',\n          lvalue=\n            ArrayRef(\n              name=\n                ID(\n                  name='coordo',\n                )\n              subscript=\n                Constant(\n                  type='int',\n                  value='1',\n                )\n            )\n          rvalue=\n            ID(\n              name='pos_lig',\n            )\n        )\n    )\n)",
+            "similar_code": [
+                {
+                    "distance": 0.3051190811497149,
+                    "project_name": "20233_02_20_TableauxFonctions",
+                    "function_name": "afficher_tableau",
+                    "function_code": "void afficher_tableau(int tableau[], int taille)\n{\n    for(int i=0; i< taille; i++)\n    {\n        printf(\"La case #%i contient: %i\\n\", i, tableau[i]);\n    }"
+                },
+                {
+                    "distance": 0.31336522102355957,
+                    "project_name": "20233_02_17_PassageParReference",
+                    "function_name": "min_max_de_3",
+                    "function_code": "void min_max_de_3(int val1, int val2, int val3, int* adr_pour_min, int* adr_pour_max)\n{\n    int min = val1;\n    int max = val1;\n\n    if(val2 < min){\n        min = val2;\n    }"
+                },
+                {
+                    "distance": 0.3182000517845154,
+                    "project_name": "20233_02_29_NomPrenom_Dynamique",
+                    "function_name": "main",
+                    "function_code": "int main() {\n    int a;\n    char* personne;\n\n\n    personne = saisie_nom_prenom();\n     \n    if(personne!=0) {\n        printf(\"%s\\n\", personne);\n    }"
+                },
+                {
+                    "distance": 0.31852471828460693,
+                    "project_name": "20223_01_18_ExerciceTableaux",
+                    "function_name": "main",
+                    "function_code": "int main(void)\n{\n\t \n\tint tab[100] = {12, 15, 17, 22, 15, 11};\n\t \n\tint tab2[50] = { 0 };\n\t \n\tint tab3[] = { 10, 20 , 30 , 40, 50, 60, 70, 80 };\n\n\tint la_position; \n\n\tif ( trouver_val(tab, 6, 15, &la_position) )\n\t{\n\t\tprintf(\"La valeur a ete trouvee a la position %d\\n\", la_position);\n\t}"
+                },
+                {
+                    "distance": 0.31895768642425537,
+                    "project_name": "20233_02_28_Exercice_NomPrenom",
+                    "function_name": "main",
+                    "function_code": "int main() {\n    int a;\n    char personne[250];\n\n    saisie_nom_prenom(personne, 250);\n    printf(\"%s\\n\", personne);\n\n    return 0;\n}"
+                }
+            ],
+            "question": "Pouvez-vous expliquer pourquoi vous avez d\u00e9cid\u00e9 d'utiliser un tableau pour stocker les nouvelles coordonn\u00e9es plut\u00f4t qu'une autre structure de donn\u00e9es dans votre fonction dplc_gauche?"
+        },
+        {
+            "function_name": "dplc_droite",
+            "function_code": "void dplc_droite(int coordo[], int pos_lig, int pos_col)\n{\n    coordo[0]=pos_col+1;\n    coordo[1]=pos_lig;\n}",
+            "function_ast": "FuncDef(\n  decl=\n    Decl(\n      name='dplc_droite',\n      quals=[],\n      align=[],\n      storage=[],\n      funcspec=[],\n      type=\n        FuncDecl(\n          args=\n            ParamList(\n              params[0]=\n                Decl(\n                  name='coordo',\n                  quals=[],\n                  align=[],\n                  storage=[],\n                  funcspec=[],\n                  type=\n                    ArrayDecl(\n                      dim_quals=[],\n                      type=\n                        TypeDecl(\n                          declname='coordo',\n                          quals=[],\n                          align=None,\n                          type=\n                            IdentifierType(\n                              names=['int'],\n                            )\n                        )\n                    )\n                )\n              params[1]=\n                Decl(\n                  name='pos_lig',\n                  quals=[],\n                  align=[],\n                  storage=[],\n                  funcspec=[],\n                  type=\n                    TypeDecl(\n                      declname='pos_lig',\n                      quals=[],\n                      align=None,\n                      type=\n                        IdentifierType(\n                          names=['int'],\n                        )\n                    )\n                )\n              params[2]=\n                Decl(\n                  name='pos_col',\n                  quals=[],\n                  align=[],\n                  storage=[],\n                  funcspec=[],\n                  type=\n                    TypeDecl(\n                      declname='pos_col',\n                      quals=[],\n                      align=None,\n                      type=\n                        IdentifierType(\n                          names=['int'],\n                        )\n                    )\n                )\n            )\n          type=\n            TypeDecl(\n              declname='dplc_droite',\n              quals=[],\n              align=None,\n              type=\n                IdentifierType(\n                  names=['void'],\n                )\n            )\n        )\n    )\n  body=\n    Compound(\n      block_items[0]=\n        Assignment(\n          op='=',\n          lvalue=\n            ArrayRef(\n              name=\n                ID(\n                  name='coordo',\n                )\n              subscript=\n                Constant(\n                  type='int',\n                  value='0',\n                )\n            )\n          rvalue=\n            BinaryOp(\n              op='+',\n              left=\n                ID(\n                  name='pos_col',\n                )\n              right=\n                Constant(\n                  type='int',\n                  value='1',\n                )\n            )\n        )\n      block_items[1]=\n        Assignment(\n          op='=',\n          lvalue=\n            ArrayRef(\n              name=\n                ID(\n                  name='coordo',\n                )\n              subscript=\n                Constant(\n                  type='int',\n                  value='1',\n                )\n            )\n          rvalue=\n            ID(\n              name='pos_lig',\n            )\n        )\n    )\n)",
+            "similar_code": [
+                {
+                    "distance": 0.2901951059995737,
+                    "project_name": "20233_02_20_TableauxFonctions",
+                    "function_name": "afficher_tableau",
+                    "function_code": "void afficher_tableau(int tableau[], int taille)\n{\n    for(int i=0; i< taille; i++)\n    {\n        printf(\"La case #%i contient: %i\\n\", i, tableau[i]);\n    }"
+                },
+                {
+                    "distance": 0.2928982377052307,
+                    "project_name": "20233_02_28_Exercice_NomPrenom",
+                    "function_name": "main",
+                    "function_code": "int main() {\n    int a;\n    char personne[250];\n\n    saisie_nom_prenom(personne, 250);\n    printf(\"%s\\n\", personne);\n\n    return 0;\n}"
+                },
+                {
+                    "distance": 0.29350754618644714,
+                    "project_name": "20233_02_29_NomPrenom_Dynamique",
+                    "function_name": "main",
+                    "function_code": "int main() {\n    int a;\n    char* personne;\n\n\n    personne = saisie_nom_prenom();\n     \n    if(personne!=0) {\n        printf(\"%s\\n\", personne);\n    }"
+                },
+                {
+                    "distance": 0.2997795045375824,
+                    "project_name": "20233_02_12_Exercice2_SaisiePositif_soWhile",
+                    "function_name": "main",
+                    "function_code": "int main(void) {\n    int saisie;\n\n     \n\n     \n\n    do\n    {\n        printf(\"Saisir un nombre positif: \");\n        scanf(\"%i\", &saisie);\n    } while( saisie <= 0 );\n\n    printf(\"La valeur saisie: %i\\n\", saisie);\n\n    return 0;\n}"
+                },
+                {
+                    "distance": 0.3018205165863037,
+                    "project_name": "20233_02_05_Expressions_Comp",
+                    "function_name": "main",
+                    "function_code": "int main() {\n    int val;\n    int resultat;\n\n    val = 10;\n    resultat = (val > 0) + val /2;\n\n    printf(\"Resultat = %i\\n\", resultat);\n\n    if( val == 10)\n    {\n        printf(\"Val vaut bien 10!\\n\");\n    }"
+                }
+            ],
+            "question": "Quelle est la finalit\u00e9 de l'assignation coordo[0]=pos_col+1 dans votre fonction dplc_droite et pourquoi avez-vous choisi de l'impl\u00e9menter de cette fa\u00e7on ?"
+        },
+        {
+            "function_name": "menu_charger_labyrinthe",
+            "function_code": "void menu_charger_labyrinthe(char* buf_nom_fichier, int buf_taille)\n{\n     \n    fflush(stdin);\n    printf(\"Veuillez saisir le nom du fichier: \");\n    fgets(buf_nom_fichier,buf_taille, stdin);\n    buf_nom_fichier[strlen(buf_nom_fichier)-1] = '\\0';\n}",
+            "function_ast": "FuncDef(\n  decl=\n    Decl(\n      name='menu_charger_labyrinthe',\n      quals=[],\n      align=[],\n      storage=[],\n      funcspec=[],\n      type=\n        FuncDecl(\n          args=\n            ParamList(\n              params[0]=\n                Decl(\n                  name='buf_nom_fichier',\n                  quals=[],\n                  align=[],\n                  storage=[],\n                  funcspec=[],\n                  type=\n                    PtrDecl(\n                      quals=[],\n                      type=\n                        TypeDecl(\n                          declname='buf_nom_fichier',\n                          quals=[],\n                          align=None,\n                          type=\n                            IdentifierType(\n                              names=['char'],\n                            )\n                        )\n                    )\n                )\n              params[1]=\n                Decl(\n                  name='buf_taille',\n                  quals=[],\n                  align=[],\n                  storage=[],\n                  funcspec=[],\n                  type=\n                    TypeDecl(\n                      declname='buf_taille',\n                      quals=[],\n                      align=None,\n                      type=\n                        IdentifierType(\n                          names=['int'],\n                        )\n                    )\n                )\n            )\n          type=\n            TypeDecl(\n              declname='menu_charger_labyrinthe',\n              quals=[],\n              align=None,\n              type=\n                IdentifierType(\n                  names=['void'],\n                )\n            )\n        )\n    )\n  body=\n    Compound(\n      block_items[0]=\n        FuncCall(\n          name=\n            ID(\n              name='fflush',\n            )\n          args=\n            ExprList(\n              exprs[0]=\n                ID(\n                  name='stdin',\n                )\n            )\n        )\n      block_items[1]=\n        FuncCall(\n          name=\n            ID(\n              name='printf',\n            )\n          args=\n            ExprList(\n              exprs[0]=\n                Constant(\n                  type='string',\n                  value='\"Veuillez saisir le nom du fichier: \"',\n                )\n            )\n        )\n      block_items[2]=\n        FuncCall(\n          name=\n            ID(\n              name='fgets',\n            )\n          args=\n            ExprList(\n              exprs[0]=\n                ID(\n                  name='buf_nom_fichier',\n                )\n              exprs[1]=\n                ID(\n                  name='buf_taille',\n                )\n              exprs[2]=\n                ID(\n                  name='stdin',\n                )\n            )\n        )\n      block_items[3]=\n        Assignment(\n          op='=',\n          lvalue=\n            ArrayRef(\n              name=\n                ID(\n                  name='buf_nom_fichier',\n                )\n              subscript=\n                BinaryOp(\n                  op='-',\n                  left=\n                    FuncCall(\n                      name=\n                        ID(\n                          name='strlen',\n                        )\n                      args=\n                        ExprList(\n                          exprs[0]=\n                            ID(\n                              name='buf_nom_fichier',\n                            )\n                        )\n                    )\n                  right=\n                    Constant(\n                      type='int',\n                      value='1',\n                    )\n                )\n            )\n          rvalue=\n            Constant(\n              type='char',\n              value=\"'\\\\0'\",\n            )\n        )\n    )\n)",
+            "similar_code": [
+                {
+                    "distance": 0.2755825494846242,
+                    "project_name": "20223_01_05_Expressions",
+                    "function_name": "main",
+                    "function_code": "int main(void)\n{\n\tint saisie; \n\n\tprintf(\"Saisir une valeur: \");\n\tscanf(\"%d\", &saisie);\n\n\tif (saisie == 0)\n\t{\n\t\tprintf(\"Vous avaez saisi une valeur nulle!\\n\");\n\t}"
+                },
+                {
+                    "distance": 0.28481611609458923,
+                    "project_name": "20223_01_07_BoucleDoWhile",
+                    "function_name": "main",
+                    "function_code": "int main(void)\n{\n\tint saisie;  \n\n\t \n\t \n\t \n\n\tdo\n\t{\n\t\tprintf(\"Veuillez saisir un nombre positif: \");\n\t\tscanf(\"%d\", &saisie);\n\t} while (saisie < 0);\n\n\t \n\n\t \n\t \n\t \n\t \n\t \n\t \n\n\t \n\tprintf(\"Merci!\\n\");\n\n\tsystem(\"pause\");\n\treturn 0;\n}"
+                },
+                {
+                    "distance": 0.28689804673194885,
+                    "project_name": "20233_02_25_String_Compare",
+                    "function_name": "main",
+                    "function_code": "int main() {\n    char chaine1[100];\n    char chaine2[100];\n\n    strcpy(chaine1, \"Bonjour\");\n    strcpy(chaine2, \"XAllo a tout le monde!\");\n\n    if(strcmp(chaine1, chaine2) == 0 )\n    {\n        printf(\"Les chaines sont identiques!\\n\");\n    }"
+                },
+                {
+                    "distance": 0.28768259286880493,
+                    "project_name": "20233_02_12_Exercice2_SaisiePositif_soWhile",
+                    "function_name": "main",
+                    "function_code": "int main(void) {\n    int saisie;\n\n     \n\n     \n\n    do\n    {\n        printf(\"Saisir un nombre positif: \");\n        scanf(\"%i\", &saisie);\n    } while( saisie <= 0 );\n\n    printf(\"La valeur saisie: %i\\n\", saisie);\n\n    return 0;\n}"
+                },
+                {
+                    "distance": 0.29056456685066223,
+                    "project_name": "20233_02_28_Exercice_NomPrenom",
+                    "function_name": "main",
+                    "function_code": "int main() {\n    int a;\n    char personne[250];\n\n    saisie_nom_prenom(personne, 250);\n    printf(\"%s\\n\", personne);\n\n    return 0;\n}"
+                }
+            ],
+            "question": "Pouvez-vous expliquer la ligne de code 'buf_nom_fichier[strlen(buf_nom_fichier)-1] = '\\0';' dans votre fonction de chargement de labyrinthe ? Quel r\u00f4le joue '\\0' dans cette ligne ?"
+        }
+    ]
+}
